@@ -1,6 +1,7 @@
 {
   "events": [
   {
+    "id": "1",
     "PK": "RUN#00001",
     "PK2": "RUN#00001",
     "SK": "RUN#00001",
@@ -30,6 +31,7 @@
     "workflow": "CES"
   },
   {
+    "id": "2",
     "PK": "RUN#00001",
     "PK2": "RUN#00001",
     "SK": "JOB#00001",
@@ -55,6 +57,7 @@
     "workflow": "CES"
   },
   {
+    "id": "3",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "INPUT#00013",
@@ -87,6 +90,7 @@
     "workflow": "CES"
   },
   {
+    "id": "4",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "INPUT#00014",
@@ -119,6 +123,7 @@
     "workflow": "CES"
   },
   {
+    "id": "5",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "INPUT#00011",
@@ -144,6 +149,7 @@
     "workflow": "CES"
   },
   {
+    "id": "6",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "OUTPUT#00021",
@@ -176,6 +182,7 @@
     "workflow": "CES"
   },
   {
+    "id": "7",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "INPUT#00012",
@@ -201,6 +208,7 @@
     "workflow": "CES"
   },
   {
+    "id": "8",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "OUTPUT#00022",
@@ -233,6 +241,7 @@
     "workflow": "CES"
   },
   {
+    "id": "9",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "OUTPUT#00023",
@@ -265,6 +274,7 @@
     "workflow": "CES"
   },
   {
+    "id": "10",
     "PK": "JOB#00001",
     "PK2": "RUN#00001",
     "SK": "OUTPUT#00024",
@@ -297,6 +307,7 @@
     "workflow": "CES"
   },
   {
+    "id": "11",
     "PK": "RUN#00003",
     "PK2": "RUN#00003",
     "SK": "RUN#00003",
@@ -326,6 +337,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "12",
     "PK": "RUN#00003",
     "PK2": "RUN#00003",
     "SK": "JOB#00003",
@@ -351,6 +363,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "13",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "INPUT#00113",
@@ -383,6 +396,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "14",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "INPUT#00114",
@@ -415,6 +429,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "15",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "INPUT#00111",
@@ -440,6 +455,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "16",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00121",
@@ -472,6 +488,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "17",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "INPUT#00112",
@@ -497,6 +514,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "18",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00122",
@@ -529,6 +547,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "19",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00123",
@@ -561,6 +580,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "20",
     "PK": "JOB#00003",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00124",
@@ -593,6 +613,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "21",
     "PK": "RUN#00003",
     "PK2": "RUN#00003",
     "SK": "JOB#00004",
@@ -618,6 +639,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "22",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "INPUT#00213",
@@ -650,6 +672,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "23",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "INPUT#00214",
@@ -682,6 +705,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "24",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "INPUT#00211",
@@ -707,6 +731,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "25",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00221",
@@ -739,6 +764,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "26",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "INPUT#00212",
@@ -764,6 +790,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "27",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00222",
@@ -796,6 +823,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "28",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00223",
@@ -828,6 +856,7 @@
     "workflow": "WGS"
   },
   {
+    "id": "29",
     "PK": "JOB#00004",
     "PK2": "RUN#00003",
     "SK": "OUTPUT#00224",
