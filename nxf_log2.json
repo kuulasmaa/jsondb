@@ -1,0 +1,210 @@
+{
+  "ModelName": "nxf_log2",
+  "ModelMetadata": {
+    "Author": "",
+    "DateCreated": "Oct 21, 2021, 02:54 PM",
+    "DateLastModified": "Oct 22, 2021, 09:41 AM",
+    "Description": "",
+    "AWSService": "Amazon DynamoDB",
+    "Version": "3.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "nxf-log2",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "PK",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "SK",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "PK2",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "SK2",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "SK3",
+          "AttributeType": "S"
+        },
+
+        {
+          "AttributeName": "type",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "status",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "run_stage",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "resume",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "event_stage",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "execution_id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "job_id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "file_id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "file_name",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "job_name",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "lab_id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "sample_id",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "meta",
+          "AttributeType": "M"
+        },
+        {
+          "AttributeName": "bucket",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "publish_dir",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "work_dir",
+          "AttributeType": "S"
+        },
+        {
+          "AttributeName": "workflow",
+          "AttributeType": "S"
+        }
+      ],
+      "GlobalSecondaryIndexes": [
+        {
+          "IndexName": "GSI_file_name",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "file_name",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "job_id",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI_lab_id",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "lab_id",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "SK",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI_job_name",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "job_name",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "status",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        },
+        {
+          "IndexName": "GSI_job_id",
+          "KeyAttributes": {
+            "PartitionKey": {
+              "AttributeName": "job_id",
+              "AttributeType": "S"
+            },
+            "SortKey": {
+              "AttributeName": "SK",
+              "AttributeType": "S"
+            }
+          },
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      },
+      "BillingMode": "PROVISIONED",
+      "ProvisionedCapacitySettings": {
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5
+        },
+        "AutoScalingRead": {
+          "ScalableTargetRequest": {
+            "MinCapacity": 1,
+            "MaxCapacity": 10,
+            "ServiceRole": "AWSServiceRoleForApplicationAutoScaling_DynamoDBTable"
+          },
+          "ScalingPolicyConfiguration": {
+            "TargetValue": 70
+          }
+        },
+        "AutoScalingWrite": {
+          "ScalableTargetRequest": {
+            "MinCapacity": 1,
+            "MaxCapacity": 10,
+            "ServiceRole": "AWSServiceRoleForApplicationAutoScaling_DynamoDBTable"
+          },
+          "ScalingPolicyConfiguration": {
+            "TargetValue": 70
+          }
+        }
+      }
+    }
+  ]
+}
+
